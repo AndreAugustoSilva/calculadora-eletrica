@@ -9,5 +9,6 @@ if (potencia == 1){
     potencia = parseFloat(prompt("Digite a potência em Watts: "));
     consumoMensal = ((potencia * horas) * 30) / 1000;
 } else console.log("Digite um valor válido.")
-let preco = consumoMensal * 0.9;
+let taxa = parseFloat(prompt("Digite o preço por kWh da sua região: "))
+let preco = consumoMensal * taxa;
 console.log("O eletrodoméstico ",item," gasta ",consumoMensal.toFixed(2)," kWh por mês. Isso equivale a ",preco.toFixed(2),"R$ no mês.");
