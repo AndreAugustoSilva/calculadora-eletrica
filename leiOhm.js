@@ -1,3 +1,5 @@
+//Calcular a Lei de Ohm//
+
 let id = parseInt(prompt("Digite qual valor você deseja descobrir (1 para tensão, 2 para resistência e 3 para corrente)"))
 let tensao = 0
 let resistencia = 0

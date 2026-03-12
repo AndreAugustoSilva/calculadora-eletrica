@@ -1,3 +1,5 @@
+//Calcular o consumo de um eletrodoméstico//
+
 let item = prompt("Digite o nome do eletrodoméstico: ");
 let horas = Number(prompt("Digite quantas horas o eletrodoméstico funciona por dia em média: "));
 let potencia = Number(prompt("Deseja trabalhar com kW ou W (1 para kW e 2 para W)?"));
