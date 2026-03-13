@@ -13,4 +13,4 @@ if (potencia == 1){
 } else console.log("Digite um valor válido.")
 let taxa = parseFloat(prompt("Digite o preço por kWh da sua região: "))
 let preco = consumoMensal * taxa;
-console.log("O eletrodoméstico ",item," gasta ",consumoMensal.toFixed(2)," kWh por mês. Isso equivale a ",preco.toFixed(2),"R$ no mês.");
+console.log("O eletrodoméstico ",item," gasta ",consumoMensal.toFixed(2)," kWh por mês. Isso equivale a ",preco.toFixed(2),"R$ mensais.");
