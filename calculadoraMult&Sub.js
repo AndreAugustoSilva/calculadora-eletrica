@@ -65,5 +65,5 @@ function mulSub() {
 
     let valor = prompt("Digite o valor a ser convertido: ");
     
-    console.log("O resultado é ",prefixo1*prefixo2*valor,".");
+    console.log("O resultado é ",prefixo1*prefixo2*valor,unidade,".");
 }
