@@ -32,7 +32,6 @@ function resistor() {
     } else {
         console.log("Algo deu errado, tente novamente.")
     }
-    
 
     switch(cor4){
 
