@@ -5,6 +5,7 @@ function mulSub() {
     let unidade = prompt("Digite a unidade a ser convertida (A, V, W, Ohm): ");
     let prefixo1;
     let prefixo2;
+    let prefixoLetra;
     let id1 = parseInt(prompt("Digite o primeiro prefixo\n 1 - Giga;\n2 - Mega;\n3 - Kilo;\n4 - Base;\n5 - Mili;\n6 - Micro;\n7 - Nano;\n8 - Pico"));
 
     switch(id1){
@@ -38,32 +39,40 @@ function mulSub() {
 
     switch(id2){
         case 1:
+            prefixoLetra = "giga";
             prefixo2 = 0.000000001;
             break;
         case 2:
+            prefixoLetra = "mega";
             prefixo2 = 0.000001;
             break;
         case 3:
+            prefixoLetra = "quilo";
             prefixo2 = 0.001;
             break;
         case 4:
+            prefixoLetra = "";
             prefixo2 = 1;
             break;
         case 5:
+            prefixoLetra = "mili";
             prefixo2 = 1000;
             break;
         case 6:
+            prefixoLetra = "micro";
             prefixo2 = 1000000;
             break;
         case 7:
+            prefixoLetra = "nano";
             prefixo2 = 1000000000;
             break;
         case 8:
+            prefixoLetra = "pico";
             prefixo2 = 1000000000000;
             break;
     }
 
     let valor = prompt("Digite o valor a ser convertido: ");
     
-    console.log("O resultado é ",prefixo1*prefixo2*valor,unidade,".");
+    console.log("O resultado é ",prefixo1*prefixo2*valor,prefixoLetra,unidade,".");
 }
