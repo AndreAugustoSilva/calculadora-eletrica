@@ -96,14 +96,37 @@ function resistor() {
     if(id == 4){
         cor2 += cor1
         cor2 *= cor3
+        
+        if(cor2 < 1000){
+            console.log("A resistência do resistor mede ",cor2," Ω.\nA tolerância é de ",cor4,"%.")
+        } else if (cor2 < 1000000){
+            cor2 /= 1000
+            console.log("A resistência do resistor mede ",cor2," KΩ.\nA tolerância é de ",cor4,"%.")
+        } else if (cor2 < 1000000000){
+            cor2 /= 1000000
+            console.log("A resistência do resistor mede ",cor2," MΩ.\nA tolerância é de ",cor4,"%.")
+        } else {
+            cor2 /= 1000000000
+            console.log("A resistência do resistor mede ",cor2," BΩ.\nA tolerância é de ",cor4,"%.")
+        }
 
-        console.log("A resistência do resistor mede ",cor2," ohms.\nA tolerância é de ",cor4,"%.")
     } else if(id == 5){
         cor5 += cor1
         cor5 += cor2
         cor5 *= cor3
 
-        console.log("A resistência do resistor mede ",cor5," ohms.\nA tolerância é de ",cor4,"%.")
+        if(cor5 < 1000){
+            console.log("A resistência do resistor mede ",cor5," Ω.\nA tolerância é de ",cor4,"%.")
+        } else if (cor5 < 1000000){
+            cor5 /= 1000
+            console.log("A resistência do resistor mede ",cor5," KΩ.\nA tolerância é de ",cor4,"%.")
+        } else if (cor5 < 1000000000){
+            cor5 /= 1000000
+            console.log("A resistência do resistor mede ",cor5," MΩ.\nA tolerância é de ",cor4,"%.")
+        } else {
+            cor5 /= 1000000000
+            console.log("A resistência do resistor mede ",cor5," BΩ.\nA tolerância é de ",cor4,"%.")
+        }
     } else {
         console.log("Algo deu errado. Tente novamente.")
     }
