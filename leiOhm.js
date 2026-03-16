@@ -10,20 +10,25 @@ function ohmLaw() {
     if(id != 1){
         tensao = parseInt(prompt("Digite a tensao"))
     }
+
     if(id != 2){
         resistencia = parseInt(prompt("Digite a resistência"))
     }
+
     if(id != 3){
         corrente = parseInt(prompt("Digite a corrente"))
     }
+
     if(id == 1){
         tensao = resistencia * corrente
         console.log("A tensão é de ",tensao,"V.")
     }
+
     if(id == 2){
         resistencia = tensao / corrente
         console.log("A resistência é de ",resistencia,"Ohms.")
     }
+
     if(id == 3){
         corrente = tensao / resistencia
         console.log("A corrente é de ",corrente,"A.")

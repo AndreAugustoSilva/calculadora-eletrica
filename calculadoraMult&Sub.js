@@ -33,7 +33,9 @@ function mulSub() {
             prefixo1 = 0.000000000001;
             break;
     }
+
     let id2 = parseInt(prompt("Digite o segundo prefixo\n 1 - Giga;\n2 - Mega;\n3 - Kilo;\n4 - Base;\n5 - Mili;\n6 - Micro;\n7 - Nano;\n8 - Pico"));
+
     switch(id2){
         case 1:
             prefixo2 = 0.000000001;
@@ -60,6 +62,8 @@ function mulSub() {
             prefixo2 = 1000000000000;
             break;
     }
+
     let valor = prompt("Digite o valor a ser convertido: ");
+    
     console.log("O resultado é ",prefixo1*prefixo2*valor,".");
 }

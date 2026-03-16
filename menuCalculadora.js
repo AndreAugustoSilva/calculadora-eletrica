@@ -10,4 +10,7 @@ switch(id) {
     case 3:
         ohmLaw();
         break;
+    case 4:
+        resistor();
+        break;
 }
