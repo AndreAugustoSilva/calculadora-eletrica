@@ -87,5 +87,5 @@ function resistor() {
         prefixoOhm = 'B'
     }
 
-    console.log("A resistência do resistor mede ",cor2,prefixoOhm," Ω.\nA tolerância é de ",cor4,"%.")
+    console.log("A resistência do resistor mede ",cor2,prefixoOhm,"Ω.\nA tolerância é de ",cor4,"%.")
 }
