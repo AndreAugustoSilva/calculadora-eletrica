@@ -1,7 +1,7 @@
 # calculadora-eletrica
 calculadora eletrica
 
-- Utilitários de Eletrônica -
+-- Utilitários de Eletrônica --
 
 Uma ferramenta interativa em JavaScript desenvolvida para facilitar cálculos fundamentais de eletrônica e estimativas de consumo de energia elétrica.
 
