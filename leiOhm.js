@@ -10,7 +10,7 @@ function ohmLaw() {
     if(id != 1){
         tensao = parseInt(prompt("Digite a tensao"))
     }
-
+    
     if(id != 2){
         resistencia = parseInt(prompt("Digite a resistência"))
     }

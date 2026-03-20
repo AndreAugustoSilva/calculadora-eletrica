@@ -2,7 +2,7 @@
 
 function mulSub() {
 
-    let unidade = prompt("Digite a unidade a ser convertida (A, V, W, Ohm): ");
+    let unidade = prompt("Digite a unidade a ser convertida (Amperes, Volts, Watts, Ohms): ");
     let prefixo1;
     let prefixo2;
     let prefixoLetra;
@@ -10,10 +10,10 @@ function mulSub() {
 
     switch(id1){
         case 1:
-            prefixo1 = 1000000000;
+            prefixo1 = 10**9;
             break;
         case 2:
-            prefixo1 = 1000000;
+            prefixo1 = 10**6;
             break;
         case 3:
             prefixo1 = 1000;
@@ -22,16 +22,16 @@ function mulSub() {
             prefixo1 = 1;
             break;
         case 5:
-            prefixo1 = 0.001;
+            prefixo1 = 10**-3;
             break;
         case 6:
-            prefixo1 = 0.000001;
+            prefixo1 = 10**-6;
             break;
         case 7:
-            prefixo1 = 0.000000001;
+            prefixo1 = 10**-9;
             break;
         case 8:
-            prefixo1 = 0.000000000001;
+            prefixo1 = 10**-12;
             break;
     }
 
@@ -40,15 +40,15 @@ function mulSub() {
     switch(id2){
         case 1:
             prefixoLetra = "giga";
-            prefixo2 = 0.000000001;
+            prefixo2 = 10**-9;
             break;
         case 2:
             prefixoLetra = "mega";
-            prefixo2 = 0.000001;
+            prefixo2 = 10**-6;
             break;
         case 3:
             prefixoLetra = "quilo";
-            prefixo2 = 0.001;
+            prefixo2 = 10**-3;
             break;
         case 4:
             prefixoLetra = "";
@@ -60,18 +60,17 @@ function mulSub() {
             break;
         case 6:
             prefixoLetra = "micro";
-            prefixo2 = 1000000;
+            prefixo2 = 10**6;
             break;
         case 7:
             prefixoLetra = "nano";
-            prefixo2 = 1000000000;
+            prefixo2 = 10**9;
             break;
         case 8:
             prefixoLetra = "pico";
-            prefixo2 = 1000000000000;
+            prefixo2 = 10**12;
             break;
     }
-
     let valor = prompt("Digite o valor a ser convertido: ");
     
     console.log("O resultado é ",prefixo1*prefixo2*valor,prefixoLetra,unidade,".");
