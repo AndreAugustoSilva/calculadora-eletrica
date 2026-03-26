@@ -1,4 +1,4 @@
-//Calcular a Lei de Ohm//
+// Calcular a Lei de Ohm //
 
 function ohmLaw() {
 

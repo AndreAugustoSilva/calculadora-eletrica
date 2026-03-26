@@ -1,4 +1,4 @@
-//Calcular o consumo de um eletrodoméstico//
+// Calcular o consumo de um eletrodoméstico //
 
 function consume() {
 
